@@ -89,13 +89,23 @@
 //         alert(`Bravo you're correct after ${guesses} guess(es).`);
 //     }
 // } while(number !== secretNumber)
-let iterations = 0;
-top: for (let i = 0; i < 5; i++) {
-    for (let j = 0; j < 5; j++) {
-        iterations++;
-        if( i === 2 && j === 2) {
-            break top;
-        }
+// let iterations = 0;
+// top: for (let i = 0; i < 5; i++) {
+//     for (let j = 0; j < 5; j++) {
+//         iterations++;
+//         if( i === 2 && j === 2) {
+//             break top;
+//         }
+//     }
+// }
+// console.log(iterations);
+let s = 'This is a javascript continue statement demo';
+let counter = 0;
+for (let i = 0 ; i < s.length; i++){
+    if(s.charAt(i) != 's') {
+        continue;
     }
+    counter ++
 }
-console.log(iterations);
+
+console.log(`The number of s found in the string is ${counter}`)
